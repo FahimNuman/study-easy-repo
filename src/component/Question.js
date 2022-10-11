@@ -1,35 +1,47 @@
 import React from 'react';
+import { useLoaderData } from 'react-router-dom';
 import Options from './Options';
 
 
 
 const Question = ({ subjects }) => {
-    const { id,correctAnswer ,question} = subjects;
-    console.log(question);
+    
+    
+    const {  question,options} = subjects;
+
+
+    console.log(subjects)
+    
+
     
     return (
+        
         <div>
-            <section class="mt-8">
-                <div class="grid grid-cols-3 gap-4 w-3/4 mx-auto text-white">
-                    <div class="bg-yellow-400 p-8 rounded-lg">
-                        <h4 class="text-3xl">{question}</h4>
-                        <h2 class="text-5xl font-medium">$<span id="deposite-total">00</span></h2>
+            
+                
+                    
+            <section class="mt-12">
+                <div class="grid grid-cols-2 gap-4 w-9/12 mx-auto ">
+                    <div class="bg-green-400 p-8 rounded-xl">
+                        
+                        <div>
+                            <p className="p-2 text-sm font-medium tracking-wider text-center uppercase">{question}</p>
+                            {
+                                options.map(option => <Options option={option}></Options>)
+                            }
+                        </div>
+
                     </div>
-                    {
-                        subjects.map(question=><Options></Options>)
-                    }
-                    <div class="bg-green-300 p-8 rounded-lg">
-                        <h4 class="text-3xl">{correctAnswer}</h4>
-                        <h2 class="text-5xl font-medium">$<span id="withdraw-total">00</span></h2>
-                    </div>
-                    <div class="bg-red-400 p-8 rounded-lg">
-                        <h4 class="text-3xl">{id}</h4>
-                        <h2 class="text-5xl font-medium">$<span id="balance-total">00</span></h2>
-                    </div>
+                   
 
 
                 </div>
             </section>
+                   
+
+
+                
+         
            
         </div>
     );

@@ -8,7 +8,7 @@ const Subject = () => {
     const subjects = useLoaderData();
     const { data } = subjects;
     const { questions } = data;
-    console.log(questions);
+  
     
    
     return (

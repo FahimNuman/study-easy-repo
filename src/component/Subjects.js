@@ -10,7 +10,7 @@ const Subjects = () => {
     
             return  (
                 <section>
-                    
+                    <h2>{data.name}</h2>
                     <div className="grid grid-cols-1 gap-1 w-4/5 mx-auto text-white">
                             <h1 className="text-5xl font-bold leading-none sm:text-6xl xl:max-w-3xl text-red-800">
                                 Welcome To Study Easy
