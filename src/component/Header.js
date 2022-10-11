@@ -25,24 +25,15 @@ const Header = () => {
                     </span>
                 </Link>
                 <ul className='items-center hidden space-x-8 lg:flex'>
+                   
                     <li>
                         <Link
-                            to='/home'
-                            aria-label='Home'
-                            title='Home'
+                            to='/subjects'
+                            aria-label='Subjects'
+                            title='Subjects'
                             className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                            Home
-                        </Link>
-                    </li>
-                    <li>
-                        <Link
-                            to='/shop'
-                            aria-label='Shop'
-                            title='Shop'
-                            className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                        >
-                            Shop
+                            Subjects
                         </Link>
                     </li>
                     <li>
@@ -65,6 +56,7 @@ const Header = () => {
                             About Us
                         </Link>
                     </li>
+                    
                 </ul>
                 <div className='lg:hidden'>
                     <button
