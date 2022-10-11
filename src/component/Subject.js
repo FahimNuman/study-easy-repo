@@ -8,11 +8,12 @@ const Subject = () => {
     const subjects = useLoaderData();
     const { data } = subjects;
     const { questions } = data;
-  
+  console.log(data.name)
     
    
     return (
         <div>
+            <h2>{data.name}</h2>
             {
                 questions.map(subject=><Question key={subject.id} subjects={subject} ></Question>)
             }

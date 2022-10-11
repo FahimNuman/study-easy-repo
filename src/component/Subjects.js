@@ -6,7 +6,7 @@ const Subjects = () => {
     
     const subjects = useLoaderData();
     const { data } = subjects;
-
+console.log(data)
     
             return  (
                 <section>

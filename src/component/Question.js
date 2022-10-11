@@ -1,5 +1,5 @@
 import React from 'react';
-import { useLoaderData } from 'react-router-dom';
+
 import Options from './Options';
 
 
@@ -8,7 +8,7 @@ const Question = ({ subjects }) => {
     
     
     const {  question,options} = subjects;
-
+    
 
     console.log(subjects)
     
