@@ -7,6 +7,7 @@ import Subject from './component/Subject';
 
 import SubjectBox from './component/SubjectBox';
 import Statistics from './component/Statistics';
+import Home from './component/Home';
 
 
 
@@ -20,7 +21,16 @@ function App() {
       path:'/',element:<Main></Main>,
       errorElement:<ErrorPage></ErrorPage>,
        children:[
-      
+         {
+           path: '/',
+           element: <Home></Home>,
+         }
+        ,
+         {
+           path: '/Home',
+           element: <Home></Home>
+           ,
+         },
       { path: '/about', element: <About></About> },
          
       {

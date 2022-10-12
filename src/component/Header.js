@@ -25,8 +25,18 @@ const Header = () => {
                     </span>
                 </Link>
                 <ul className='items-center hidden space-x-8 lg:flex'>
-                   
+                   <li>
+                        <Link
+                            to='/home'
+                            aria-label='Home'
+                            title='Home'
+                            className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        >
+                            Home
+                        </Link>
+                   </li>
                     <li>
+                       
                         <Link
                             to='/subjects'
                             aria-label='Subjects'
