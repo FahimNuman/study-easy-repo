@@ -1,13 +1,14 @@
 import { createBrowserRouter, RouterProvider } from 'react-router-dom';
 import Main from './component/Main';
 import ErrorPage from './component/ErrorPage';
-import About from './component/About';
+import About from './component/Blog';
 import Subjects from './component/Subjects';
 import Subject from './component/Subject';
 
 import SubjectBox from './component/SubjectBox';
 import Statistics from './component/Statistics';
 import Home from './component/Home';
+import Blog from './component/Blog';
 
 
 
@@ -31,7 +32,7 @@ function App() {
            element: <Home></Home>
            ,
          },
-      { path: '/about', element: <About></About> },
+      { path: '/blog', element: <Blog></Blog> },
          
       {
         path: 'subjects', 

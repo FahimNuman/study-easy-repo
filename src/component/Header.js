@@ -46,16 +46,7 @@ const Header = () => {
                             Subjects
                         </Link>
                     </li>
-                    <li>
-                        <Link
-                            to='/cart'
-                            aria-label='Cart'
-                            title='Cart'
-                            className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
-                        >
-                            <p> Cart</p>
-                        </Link>
-                    </li>
+                   
                     <li>
                         <Link
                             to='/statistics'
@@ -70,12 +61,12 @@ const Header = () => {
                     
                     <li>
                         <Link
-                            to='/about'
-                            aria-label='About Us'
-                            title='About Us'
+                            to='/blog'
+                            aria-label='Blog'
+                            title='Blog'
                             className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                         >
-                            About Us
+                            Blog
                         </Link>
                     </li>
                     
@@ -148,32 +139,46 @@ const Header = () => {
                                     <ul className='space-y-4'>
                                         <li>
                                             <Link
-                                                to='/shop'
-                                                aria-label='Shop'
-                                                title='Shop'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                to='/home'
+                                                aria-label='Home'
+                                                title='Home'
+                                                className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                             >
-                                                Shop
+                                                Home
                                             </Link>
                                         </li>
                                         <li>
+
                                             <Link
-                                                to='/cart'
-                                                aria-label='Cart'
-                                                title='Cart'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                to='/subjects'
+                                                aria-label='Subjects'
+                                                title='Subjects'
+                                                className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                             >
-                                                <p> Cart</p>
+                                                Subjects
                                             </Link>
                                         </li>
+
                                         <li>
                                             <Link
-                                                to='/about'
-                                                aria-label='About Us'
-                                                title='About Us'
-                                                className='font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                                to='/statistics'
+                                                aria-label=' Statistics'
+                                                title='Statistics'
+                                                className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
                                             >
-                                                About Us
+                                                <p> Statistics</p>
+                                            </Link>
+                                        </li>
+
+
+                                        <li>
+                                            <Link
+                                                to='/blog'
+                                                aria-label='Blog'
+                                                title='Blog'
+                                                className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                                            >
+                                                Blog
                                             </Link>
                                         </li>
                                     </ul>
