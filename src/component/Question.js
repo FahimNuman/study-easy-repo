@@ -8,6 +8,7 @@ import Options from './Options';
 
 
 
+
 const Question = ({ subjects }) => {
     
     
@@ -50,10 +51,21 @@ const Question = ({ subjects }) => {
                     <div class="bg-green-400 p-8 rounded-xl">
                         
                         <div>
-                            <button onClick={() => showCorrect(correctAnswer)}><EyeIcon className="h-6 w-6 text-blue-500" /></button>
-<p className="p-2 text-sm font-medium tracking-wider text-center uppercase ">{question}</p>
+                            <button onClick={() => showCorrect(correctAnswer)}>
+                                <EyeIcon className="h-6 w-6 text-blue-500" />
+                            </button>
+
+
+                                     <p className="p-2 text-sm font-medium tracking-wider text-center uppercase ">
+                                <div dangerouslySetInnerHTML={{ __html: question }}>
+                                    </div>
+                                    </p>
                             {
-                                options.map(option => <Options question={question} trueFalseCheck={trueFalseCheck} option={option}></Options>)
+
+
+                                options.map(option => <Options question={question} trueFalseCheck={trueFalseCheck} option={option}>
+
+                                </Options>)
                             }
                         </div>
 
