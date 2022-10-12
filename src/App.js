@@ -5,6 +5,9 @@ import About from './component/About';
 import Subjects from './component/Subjects';
 import Subject from './component/Subject';
 
+import SubjectBox from './component/SubjectBox';
+import Statistics from './component/Statistics';
+
 
 
 
@@ -14,9 +17,12 @@ import Subject from './component/Subject';
 function App() {
   const router =createBrowserRouter([
     {
-      path:'/',element:<Main></Main>,errorElement:<ErrorPage></ErrorPage>, children:[
+      path:'/',element:<Main></Main>,
+      errorElement:<ErrorPage></ErrorPage>,
+       children:[
       
       { path: '/about', element: <About></About> },
+         
       {
         path: 'subjects', 
         loader: async () => {
@@ -27,6 +33,7 @@ function App() {
 
     ]
     },
+    
     {
       path:'/subjectBox/:id',
       loader: async ({params}) => {
@@ -35,6 +42,22 @@ function App() {
       },
       element:<Subject></Subject>
     },
+    {
+      path:'/subjectBox/:id',
+      loader: async ({params}) => {
+        console.log(params);
+        return fetch(`https://openapi.programming-hero.com/api/quiz/${params.id}`);
+      },
+      element:<SubjectBox></SubjectBox>
+    },
+    {
+      path: '/statistics',
+      loader: async () => {
+        return fetch('https://openapi.programming-hero.com/api/quiz');
+      },
+      element: <Statistics></Statistics>
+    },
+   
 
   ])
   return (

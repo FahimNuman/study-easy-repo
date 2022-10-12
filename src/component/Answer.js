@@ -1,10 +1,14 @@
 import React from 'react';
 
-const Answer = ({subject}) => {
-    const{name} = subject;
+
+const Answer = ({ subjects }) => {
+    
+    const { data } = subjects;
+    const { questions } = data;
+    
     return (
         <div>
-            {name}
+            {questions.correctAnswer}
         </div>
     );
 };

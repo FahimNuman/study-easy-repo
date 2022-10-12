@@ -7,7 +7,7 @@ const Header = () => {
         <div className='px-4 py-5  mx-auto sm:max-w-xl md:max-w-full lg:max-w-screen-xl md:px-24 lg:px-8'>
             <div className='relative flex items-center justify-between'>
                 <Link
-                    to='/'
+                    to='/subjects'
                     aria-label='Study Easy'
                     title='Study Easy'
                     className='inline-flex items-center'
@@ -48,6 +48,18 @@ const Header = () => {
                     </li>
                     <li>
                         <Link
+                            to='/statistics'
+                            aria-label=' Statistics'
+                            title='Statistics'
+                            className='font-medium tracking-wide text-orange-700 transition-colors duration-200 hover:text-deep-purple-accent-400'
+                        >
+                            <p> Statistics</p>
+                        </Link>
+                    </li>
+
+                    
+                    <li>
+                        <Link
                             to='/about'
                             aria-label='About Us'
                             title='About Us'
@@ -56,6 +68,8 @@ const Header = () => {
                             About Us
                         </Link>
                     </li>
+                    
+                   
                     
                 </ul>
                 <div className='lg:hidden'>

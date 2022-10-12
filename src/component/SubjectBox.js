@@ -22,7 +22,7 @@ const SubjectBox = ({subjects}) => {
                 className='px-8 block w-full mt-4 py-3 font-semibold rounded-full bg-cyan-200 text-gray-800 hover:bg-cyan-400'
             >
                 <Link to={`/SubjectBox/${id}`}>
-                    Show Details
+                    Start Practic
                 </Link>
             </button>
         </div>
